@@ -1,7 +1,7 @@
 version: "3.5"
 services:
   beacon-chain:
-    image: "beacon-chain.lodestar.dnp.dappnode.eth:1.0.0"
+    image: "beacon-chain.lodestar-prater.dnp.dappnode.eth:0.0.1"
     build:
       context: beacon-chain
       args:
@@ -18,13 +18,13 @@ services:
       DEBUG_LEVEL: info
       BEACON_API_PORT: 3500
       HTTP_ENGINE: ""
-      CORSDOMAIN: "http://lodestar.dappnode"
+      CORSDOMAIN: "http://lodestar-prater.dappnode"
       CHECKPOINT_SYNC_URL: ""
       P2P_PORT: 9125
       EXTRA_OPTS: ""
       CONFIG_MODE: basic
   validator:
-    image: "validator.lodestar.dnp.dappnode.eth:1.0.0"
+    image: "validator.lodestar-prater.dnp.dappnode.eth:0.0.1"
     build:
       context: validator
       args:
@@ -34,8 +34,8 @@ services:
       - "seccomp:unconfined"
     environment:
       DEBUG_LEVEL: info
-      HTTP_WEB3SIGNER: "http://web3signer.web3signer.dappnode:9000"
-      BEACON_NODE_ADDR: "http://beacon-chain.lodestar.dappnode:3500"
+      HTTP_WEB3SIGNER: "http://web3signer.web3signer-prater.dappnode:9000"
+      BEACON_NODE_ADDR: "http://beacon-chain.lodestar-prater.dappnode:3500"
       GRAFFITI: validating_from_DAppNode
       EXTRA_OPTS: ""
       FEE_RECIPIENT_ADDRESS: ""

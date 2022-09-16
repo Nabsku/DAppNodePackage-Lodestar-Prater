@@ -3,7 +3,7 @@
 
 exec node /usr/app/node_modules/.bin/lodestar \
     beacon \
-    --network=mainnet \
+    --network=prater \
     --jwt-secret=/jwtsecret \
     --execution.urls=$HTTP_ENGINE \
     --dataDir=/var/lib/data \

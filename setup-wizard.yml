@@ -27,19 +27,12 @@ fields:
 
       IT IS NO LONGER POSSIBLE TO USE INFURA OR ANY OTHER SERVICE PROVIDER AS YOUR EXECUTION CLIENT.
 
-      - Geth [Install link](http://my.dappnode/#/installer/geth.dnp.dappnode.eth)
-
-      - Nethermind [Install link](http://my.dappnode/#/installer/nethermind.public.dappnode.eth)
-
-      - Erigon [Install link](http://my.dappnode/#/installer/erigon.dnp.dappnode.eth)
-
+      - Goerli Geth [Install link](http://my.dappnode/#/installer/goerli-geth.dnp.dappnode.eth)
 
       Consensus Clients require access to an Execution Client in order to operate properly.
       Be sure to only select an Execution Client below that you have already installed.
     enum:
-      - "http://geth.dappnode:8551"
-      - "http://nethermind.public.dappnode:8551"
-      - "http://erigon.dappnode:8551"
+      - "http://goerli-geth.dappnode:8551"
     if: { "config_mode": { "enum": ["basic"] } }    
   - id: HTTP_ENGINE
     required: true

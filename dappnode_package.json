@@ -1,6 +1,6 @@
 {
-  "name": "lodestar.dnp.dappnode.eth",
-  "version": "1.0.0",
+  "name": "lodestar-prater.dnp.dappnode.eth",
+  "version": "0.0.1",
   "upstreamVersion": "v1.0.0",
   "architectures": ["linux/amd64", "linux/arm64"],
   "upstreamRepo": "ChainSafe/lodestar",
@@ -16,14 +16,14 @@
   "categories": ["Blockchain", "ETH2.0"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dappnode/DAppNodePackage-Lodestar.git"
+    "url": "https://github.com/dappnode/DAppNodePackage-Lodestar-Prater.git"
   },
   "bugs": {
-    "url": "https://github.com/dappnode/DAppNodePackage-Lodestar/Issues"
+    "url": "https://github.com/dappnode/DAppNodePackage-Lodestar-Prater/Issues"
   },
   "links": {
-    "ui": "http://ui.web3signer.dappnode?signer_url=http://web3signer.web3signer.dappnode:9000",
-    "homepage": "https://github.com/dappnode/DAppNodePackage-lodestar#readme",
+    "ui": "http://ui.web3signer-prater.dappnode?signer_url=http://web3signer.web3signer-prater.dappnode:9000",
+    "homepage": "https://github.com/dappnode/DAppNodePackage-lodestar-prater#readme",
     "readme": "https://github.com/ChainSafe/lodestar#lodestar-ethereum-consensus-implementation",
     "docs": "https://chainsafe.github.io/lodestar/"
   },
